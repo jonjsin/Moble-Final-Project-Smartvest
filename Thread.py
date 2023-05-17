@@ -13,9 +13,9 @@ class SensorThread(threading.Thread):
             try:
                 # 분리한 py 파일에서 각 센서 값을 읽어 DB에 입력하는 함수 호출
                 DHT_insert()
-                #Light_insert()
-                #Flame_insert()
-                #Gas_insert()
+                Light_insert()
+                Flame_insert()
+                Gas_insert()
                 time.sleep(10)
             # 에러 발생 시 코드
             except RuntimeError as error:
