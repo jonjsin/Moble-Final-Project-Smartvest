@@ -6,6 +6,7 @@ import time
 from Api_SendtoAWS import Send_to_AWS
 from db_info import db_connect, db_info
 
+# 센서들의 GPIO 핀 번호 지정
 db = db_connect(db_info)
 cur = db.cursor()
 dhtDevice = adafruit_dht.DHT22(board.D4)
