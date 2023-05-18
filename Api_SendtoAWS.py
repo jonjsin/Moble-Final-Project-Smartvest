@@ -5,6 +5,7 @@ from db_info import db_connect, db_info
 
 def Send_to_AWS(table):
     # 테이블 데이터를 딕셔너리 형태로 정의
+    # url : AWS 서버의 엔드포인트 url
     table_data = {
         "TempHm": {
             "url": "http://13.209.88.1:8080/insert/TempHm",
